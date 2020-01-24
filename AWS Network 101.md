@@ -10,8 +10,7 @@ VPC and Subnets
 - Subnet: a subset of a VPC. 
   - cannot span multiple AZs
   - an be private or public
-    - public subnets have a default route to an Internet Gateway; private subnets do not.
-    - public: 0.0.0.0/0 to igw-xxxxx
+    - public subnets have a default route to an Internet Gateway; private subnets do not. (routing table: 0.0.0.0/0 to igw-xxxxx)
 
 
 
