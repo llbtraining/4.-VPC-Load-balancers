@@ -18,6 +18,7 @@ VPC and Subnets
 ACL and Security groups
 =======================
 TL;DR: Security group is the firewall of EC2 Instances whereas Network ACL is the firewall of the Subnet.
+https://medium.com/awesome-cloud/aws-difference-between-security-groups-and-network-acls-adc632ea29ae
 ![VPC Overview](https://miro.medium.com/max/472/1*pwAjuZMHsDJV6XckZGARxA.png)
 
 | ACL (Network Access control lists ) | Security Groups |
