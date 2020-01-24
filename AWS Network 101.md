@@ -25,6 +25,8 @@ TL;DR: Security group is the firewall of EC2 Instances whereas Network ACL is th
 | applies not subnets and what is in this subnet               | applies to AWS services to which it is explicitely attached to |
 | allow everything by default | deny everything by default|
 |stateless (need to implement both directions of a communication) | stateful (will allow responses to requests without having explicitely declaring them)|
+|"allow" and "deny" rules | "allow" rules only | 
+| rules applied in order of priority | all rules applied | 
 
 
 
