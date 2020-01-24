@@ -1,1 +1,17 @@
+AMI
+image of a server - can in clude EBS snapshots, etc..
 
+
+Autoscaling groups
+===================
+An Auto Scaling group contains a collection of Amazon EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management
+- It uses:
+  - **Launch Configuration**
+    - an instance configuration template that an Auto Scaling group uses to launch EC2 instances
+    - uses a AMI
+  - **Target groups**
+    - A logical grouping of EC2 instances
+
+Application Load balancers
+==========================
+- Receives requests and load balance them accross the instance of a specific **Target Group**
