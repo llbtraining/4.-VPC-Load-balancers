@@ -1,0 +1,16 @@
+1. Update the flask application to return the hostname of the machine. Test it from the internet.
+  - ensure the the flask script automatically starts with the server:
+    - type the key "i" to enter the vi insert mode
+    - /home/ec2-user/python3venv/bin/python /home/ec2-user/project/server.py
+    - type ":wq!" then enter
+
+2. create an AMI based on the above server
+3. create a launch configuration based on the AMI created in step 2
+ - choose the righ security groups!
+4. create a target group
+ - pointing to http port 5000 for healthchecks
+5. create an autoscaling group with desired/minimum/maximum set to 2 instances. 
+  - Use the Launch configuration from Step 3. 
+  - Feed them in the target group created in step 4.
+6. create the load balancer
+  - remember to choose the right security groups...
